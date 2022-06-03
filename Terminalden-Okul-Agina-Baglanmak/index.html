@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang=tr>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Eğer grafik arayüzü kurulmuş linux tabanlı bir işletim sistemi kullanıyorsanız kurumsal ağlara bağlanmak pek sıkıntı olmuyor. Grafik arayüzü kurmadıysanız karşınıza en popüler ağ yöneticilerinden biri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Terminalden Okul Ağına Bağlanmak">
+<meta property="og:url" content="http://example.com/Terminalden-Okul-Agina-Baglanmak/index.html">
+<meta property="og:site_name" content="haldemir">
+<meta property="og:description" content="Eğer grafik arayüzü kurulmuş linux tabanlı bir işletim sistemi kullanıyorsanız kurumsal ağlara bağlanmak pek sıkıntı olmuyor. Grafik arayüzü kurmadıysanız karşınıza en popüler ağ yöneticilerinden biri">
+<meta property="og:locale" content="tr_TR">
+<meta property="article:published_time" content="2022-02-21T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-03T23:03:07.757Z">
+<meta property="article:author" content="HALDEMIR">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/android-icon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Terminalden Okul Ağına Bağlanmak</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Ana Sayfa</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Yazilar</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Başa dön" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Gönderiyi paylaş" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Önceki gönderi</span>
+      <span id="i-next" class="info" style="display:none;">Sonraki gönderi</span>
+      <span id="i-top" class="info" style="display:none;">Başa dön</span>
+      <span id="i-share" class="info" style="display:none;">Gönderiyi paylaş</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/Terminalden-Okul-Agina-Baglanmak/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&text=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&is_video=false&description=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Terminalden Okul Ağına Bağlanmak&body=Check out this article: http://example.com/Terminalden-Okul-Agina-Baglanmak/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&name=Terminalden Okul Ağına Bağlanmak&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/Terminalden-Okul-Agina-Baglanmak/&t=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%9Cnmtui%E2%80%9D-toolunun-kullanimi-daha-kolay-olmasina-ragmen-WPA-x2F-WPA2-Enterprise-aglarini-desteklemedigi-icin-kurumsal-aglara-baglanirken-kullanamiyoruz"><span class="toc-number">1.</span> <span class="toc-text">“nmtui” toolunun kullanımı daha kolay olmasına rağmen, WPA&#x2F;WPA2-Enterprise ağlarını desteklemediği için kurumsal ağlara bağlanırken kullanamıyoruz.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gelelim-nmcli-toolunun-kullanimina"><span class="toc-number"></span> <span class="toc-text">Gelelim nmcli toolunun kullanımına;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ag-adaptorunun-durumunu-gosterir"><span class="toc-number"></span> <span class="toc-text">Ağ adaptörünün durumunu gösterir</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Adaptoru-acip-kapatir"><span class="toc-number"></span> <span class="toc-text">Adaptörü açıp kapatır</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Aglari-tarar"><span class="toc-number"></span> <span class="toc-text">Ağları tarar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Baglanilacak-ag-secilir"><span class="toc-number"></span> <span class="toc-text">Bağlanılacak ağ seçilir</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Okulun-interneti-PEAP-protokolu-ile-calisan-kurumsal-bir-ag-oldugu-icin-ona-gore-yapilandirmamiz-lazim"><span class="toc-number">1.</span> <span class="toc-text">Okulun interneti PEAP protokolü ile çalışan kurumsal bir ağ olduğu için ona göre yapılandırmamız lazım.</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Terminalden Okul Ağına Bağlanmak
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">HALDEMIR</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-02-21T00:00:00.000Z" itemprop="datePublished">21-02-2022</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Eğer grafik arayüzü kurulmuş <span style="color:green;">linux</span> tabanlı bir işletim sistemi kullanıyorsanız kurumsal ağlara bağlanmak pek sıkıntı olmuyor. Grafik arayüzü kurmadıysanız karşınıza en popüler ağ yöneticilerinden biri olan <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/NetworkManager">NetworkManager</a>’ın CLI (Comman Line Interface) toollarından <a target="_blank" rel="noopener" href="https://man.archlinux.org/man/nmcli">nmcli</a> ve <a target="_blank" rel="noopener" href="https://man.archlinux.org/man/nmtui">nmtui</a> çıkacak.<br></p>
+<h4 id="“nmtui”-toolunun-kullanimi-daha-kolay-olmasina-ragmen-WPA-x2F-WPA2-Enterprise-aglarini-desteklemedigi-icin-kurumsal-aglara-baglanirken-kullanamiyoruz"><a href="#“nmtui”-toolunun-kullanimi-daha-kolay-olmasina-ragmen-WPA-x2F-WPA2-Enterprise-aglarini-desteklemedigi-icin-kurumsal-aglara-baglanirken-kullanamiyoruz" class="headerlink" title="“nmtui” toolunun kullanımı daha kolay olmasına rağmen, WPA&#x2F;WPA2-Enterprise ağlarını desteklemediği için kurumsal ağlara bağlanırken kullanamıyoruz."></a>“nmtui” toolunun kullanımı daha kolay olmasına rağmen, <span style="color:aqua;">WPA&#x2F;WPA2-Enterprise</span> ağlarını desteklemediği için kurumsal ağlara bağlanırken kullanamıyoruz.<br></h4><h2 id="Gelelim-nmcli-toolunun-kullanimina"><a href="#Gelelim-nmcli-toolunun-kullanimina" class="headerlink" title="Gelelim nmcli toolunun kullanımına;"></a>Gelelim nmcli toolunun kullanımına;</h2><h3 id="Ag-adaptorunun-durumunu-gosterir"><a href="#Ag-adaptorunun-durumunu-gosterir" class="headerlink" title="Ağ adaptörünün durumunu gösterir"></a><span style="color:Khaki;">Ağ adaptörünün durumunu gösterir</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nmcli wifi</span><br></pre></td></tr></table></figure>
+
+<h3 id="Adaptoru-acip-kapatir"><a href="#Adaptoru-acip-kapatir" class="headerlink" title="Adaptörü açıp kapatır"></a><span style="color:Khaki;">Adaptörü açıp kapatır</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nmcli radio wifi &lt;on|off&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Aglari-tarar"><a href="#Aglari-tarar" class="headerlink" title="Ağları tarar"></a><span style="color:Khaki;">Ağları tarar</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nmcli device wifi list</span><br></pre></td></tr></table></figure>
+
+<h3 id="Baglanilacak-ag-secilir"><a href="#Baglanilacak-ag-secilir" class="headerlink" title="Bağlanılacak ağ seçilir"></a><span style="color:Khaki;">Bağlanılacak ağ seçilir</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nmcli connection edit &lt;SSID|BSSID&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Okulun-interneti-PEAP-protokolu-ile-calisan-kurumsal-bir-ag-oldugu-icin-ona-gore-yapilandirmamiz-lazim"><a href="#Okulun-interneti-PEAP-protokolu-ile-calisan-kurumsal-bir-ag-oldugu-icin-ona-gore-yapilandirmamiz-lazim" class="headerlink" title="Okulun interneti PEAP protokolü ile çalışan kurumsal bir ağ olduğu için ona göre yapılandırmamız lazım."></a>Okulun interneti PEAP protokolü ile çalışan kurumsal bir ağ olduğu için ona göre yapılandırmamız lazım.</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">===| nmcli interactive connection editor |===</span><br><span class="line"></span><br><span class="line">Editing existing <span class="string">&#x27;802-11-wireless&#x27;</span> connection: <span class="string">&#x27;Wifi Name&#x27;</span></span><br><span class="line"></span><br><span class="line">Type <span class="string">&#x27;help&#x27;</span> or <span class="string">&#x27;?&#x27;</span> <span class="keyword">for</span> available commands.</span><br><span class="line">Type <span class="string">&#x27;print&#x27;</span> to show all the connection properties.</span><br><span class="line">Type <span class="string">&#x27;describe [&lt;setting&gt;.&lt;prop&gt;]&#x27;</span> <span class="keyword">for</span> detailed property description.</span><br><span class="line"></span><br><span class="line">You may edit the following settings: connection, 802-11-wireless (wifi), 802-11-wireless-security (wifi-sec), 802-1x, ethtool, match, ipv4, ipv6, hostname, tc, proxy</span><br><span class="line"></span><br><span class="line">nmcli&gt; <span class="built_in">set</span> 802-1x.eap peap</span><br><span class="line">nmcli&gt; <span class="built_in">set</span> 802-1x.phase2-auth mschapv2</span><br><span class="line">nmcli&gt; <span class="built_in">set</span> 802-1x.identity &lt;email&gt;</span><br><span class="line">nmcli&gt; <span class="built_in">set</span> 802-1x.password &lt;passwd&gt;</span><br><span class="line">nmcli&gt; <span class="built_in">set</span> wifi-sec.key-mgmt wpa-eap</span><br><span class="line">nmcli&gt; <span class="built_in">set</span> 802-11-wireless-security.auth-alg open</span><br><span class="line">nmcli&gt; save</span><br><span class="line">nmcli&gt; activate</span><br></pre></td></tr></table></figure>
+
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Ana Sayfa</a></li>
+         
+          <li><a href="/archives/">Yazilar</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%9Cnmtui%E2%80%9D-toolunun-kullanimi-daha-kolay-olmasina-ragmen-WPA-x2F-WPA2-Enterprise-aglarini-desteklemedigi-icin-kurumsal-aglara-baglanirken-kullanamiyoruz"><span class="toc-number">1.</span> <span class="toc-text">“nmtui” toolunun kullanımı daha kolay olmasına rağmen, WPA&#x2F;WPA2-Enterprise ağlarını desteklemediği için kurumsal ağlara bağlanırken kullanamıyoruz.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gelelim-nmcli-toolunun-kullanimina"><span class="toc-number"></span> <span class="toc-text">Gelelim nmcli toolunun kullanımına;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ag-adaptorunun-durumunu-gosterir"><span class="toc-number"></span> <span class="toc-text">Ağ adaptörünün durumunu gösterir</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Adaptoru-acip-kapatir"><span class="toc-number"></span> <span class="toc-text">Adaptörü açıp kapatır</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Aglari-tarar"><span class="toc-number"></span> <span class="toc-text">Ağları tarar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Baglanilacak-ag-secilir"><span class="toc-number"></span> <span class="toc-text">Bağlanılacak ağ seçilir</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Okulun-interneti-PEAP-protokolu-ile-calisan-kurumsal-bir-ag-oldugu-icin-ona-gore-yapilandirmamiz-lazim"><span class="toc-number">1.</span> <span class="toc-text">Okulun interneti PEAP protokolü ile çalışan kurumsal bir ağ olduğu için ona göre yapılandırmamız lazım.</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/Terminalden-Okul-Agina-Baglanmak/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&text=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&is_video=false&description=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Terminalden Okul Ağına Bağlanmak&body=Check out this article: http://example.com/Terminalden-Okul-Agina-Baglanmak/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&title=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/Terminalden-Okul-Agina-Baglanmak/&name=Terminalden Okul Ağına Bağlanmak&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/Terminalden-Okul-Agina-Baglanmak/&t=Terminalden Okul Ağına Bağlanmak"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menü</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> İçindekiler</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Paylaş</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Başa dön</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Lorem Ipsum &copy;
+    Haldemir
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Ana Sayfa</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Yazilar</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
